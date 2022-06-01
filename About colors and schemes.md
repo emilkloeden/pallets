@@ -4,25 +4,29 @@ Computers display colors that are represented as a triad of values known as RGB 
 
 It's worth remembering that Red, Green and Blue is not the same as the three primary colors Red, Yellow and Blue. This results in some translation difficulty when it comes to switching between schemes.
 
-Some RGB and Hex Code values:
-|Color|Color Type|RGB|Hex
-|--|--|--|--|
-|Red|Primary|255, 0, 0|#FF0000
-|Lime|Secondary?|0, 255, 0|#00FF00
-|Blue|Primary|0, 0, 255|#0000FF
-|Yellow|Primary|255, 255, 0|#FFFF00
-|Cyan|Secondary?|0, 255, 255|#00FFFF
-|Magenta|Secondary?|255, 0, 255|#FF00FF
-|Silver| |192, 192, 192|#C0C0C0
-|Gray| |128, 128, 128|#808080
-|Maroon| |128, 0, 0|#800000
-|Olive| |128, 128, 0|#808000
-|Green| |0, 128, 0|#008000
-|Purple| |128, 0, 128|#800080
-|Teal| |0, 128, 128|#008080
-|Navy| |0, 0, 128|#000080
+Another means of representing colors is Hue, Saturation, and Lightness (HSL), where Red is represented as (0, 100%, 100%). It is possible to convert between RGB and HSL and back [Al-gore-rhythm](https://www.niwa.nu/2013/05/math-behind-colorspace-conversions-rgb-hsl/)
 
-Another means of representing colors is Hue, Saturation, and Lightness (HSL), where Red is represented as (0, 100%, 100%).
+BONUS: Apparently browser dev tools can do the conversion for you if you shift click on a color in the style inspector!
+
+Some RGB, Hex and HSL values:
+|Color|Color Type|RGB|Hex|HSL
+|--|--|--|--|--|
+|Black| |0, 0, 0|#000000|0deg, 0%, 0%|
+|White| |255, 255, 255|#FFFFFF|0deg, 0%, 100%|
+|Red|Primary|255, 0, 0|#FF0000|0deg, 100%, 50%|
+|Lime|Secondary?|0, 255, 0|#00FF00|120deg, 100%, 50%|
+|Blue|Primary|0, 0, 255|#0000FF|240deg, 100%, 50%|
+|Yellow|Primary|255, 255, 0|#FFFF00|60deg, 100%, 50%|
+|Cyan|Secondary?|0, 255, 255|#00FFFF|180deg, 100%, 50%|
+|Magenta|Secondary?|255, 0, 255|#FF00FF|300deg, 100%, 50%|
+|Silver| |192, 192, 192|#C0C0C0|0deg, 0%, 75%|
+|Gray| |128, 128, 128|#808080|0deg, 0%, 50%|
+|Maroon| |128, 0, 0|#800000|0deg, 100%, 25%|
+|Olive| |128, 128, 0|#808000|60deg, 100%, 25%|
+|Green| |0, 128, 0|#008000|120deg, 100%, 25%|
+|Purple| |128, 0, 128|#800080|300deg, 100%, 25%|
+|Teal| |0, 128, 128|#008080|180deg, 100%, 25%|
+|Navy| |0, 0, 128|#000080|240deg, 100%, 25%|
 
 # Colors
 
@@ -41,9 +45,9 @@ Source: [Introduction to the color wheel](https://careerfoundry.com/en/blog/ui-d
 To add shade you should multiple each component by a fraction of its value (e.g. 1/4, 1/2 etc.)
 Thus if we start with yellow (255, 255, 0) (#FFFF00) and we multiply the R, G, and B, values by 0.25 we get (63, 63, 0) (after rounding) which is a darker shade of yellow than if we were to multiply the values by 0.8 (203, 203, 0).
 
-Another means of representing colors is Hue, Saturation, and Lightness (HSL), where Red is represented as (0, 100%, 100%). Adding shade here is done by reducing the L value alone.
+Another means of representing colors is Hue, Saturation, and Lightness (HSL), where Red is represented as (0, 100%, 100%). Adding shade here is done by reducing the lightness level alone. RGB(255, 0, 0) translates to HSL(0, 100%, 50%) and as such to add a little `shade` we could go with HSL(0, 100%, 40%) or to add `tint` HSL(0, 100%, 60%).
 
-Here's a quick and dirty script to paste into a browser console that demonstrates this
+Here's a quick and dirty script to paste into a browser console that demonstrates this (it overwrites the content of your page, so exercise caution):
 
 ```js
 function hslMe(n = 6, hue = 0) {
@@ -73,11 +77,15 @@ hslMe(4, 60);
 
 Source: [Introduction to the color wheel](https://careerfoundry.com/en/blog/ui-design/introduction-to-color-theory-and-color-palettes/#introduction-to-the-color-wheel)
 
+So, if we can manipulate hsl values we can do this by increasing the lightness level
+
 ## Tone
 
     Tone is the result of a color that has had both white and black added to it. In other words, tone refers to any hue that has been modified with the addition of grey—as long as the grey is purely neutral (only containing white and black).
 
 Source: [Introduction to the color wheel](https://careerfoundry.com/en/blog/ui-design/introduction-to-color-theory-and-color-palettes/#introduction-to-the-color-wheel)
+
+While one [resource](https://www.smashingmagazine.com/2010/02/color-theory-for-designers-part-2-understanding-concepts-and-terminology/) suggests tone is different to saturation, 0% saturation is grey and 100% represents the absence of grey, so I'd suggest the S in HSL would work should a scheme require the addition of tone.
 
 # Schemes
 
@@ -89,4 +97,4 @@ Source: [What are the different type of color palletes](https://careerfoundry.co
 
 Key words there being: `tone`, `shade` and `color` (or hue, really).
 
-Thus if HSL is available we can generate a collection of values with a different saturation level to achieve this theme.
+Thus if HSL is available we can generate a collection of values with a different lighness level to achieve this theme.

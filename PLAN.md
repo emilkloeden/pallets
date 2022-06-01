@@ -36,3 +36,4 @@ Splitting the code into these three parts, would allow swapping out means of get
 - [The Color API - Scheme Reference](https://www.thecolorapi.com/docs#schemes-generate-scheme-get)
 - [Rapid Tables - Color Scheme Generator](https://www.rapidtables.com/web/color/color-scheme.html)
 - [Math behind colorspace conversions, RGB-HSL](https://www.niwa.nu/2013/05/math-behind-colorspace-conversions-rgb-hsl/)
+- [Why should you use HSL color representation in CSS?](https://tsh.io/blog/why-should-you-use-hsl-color-representation-in-css/)
