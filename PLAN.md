@@ -34,3 +34,5 @@ Splitting the code into these three parts, would allow swapping out means of get
 
 - [Career Foundry - Introduction to Color Theory and Color Palletes](https://careerfoundry.com/en/blog/ui-design/introduction-to-color-theory-and-color-palettes/#:~:text=Color%20theory%20is%20a%20framework,aesthetic%20and%20a%20psychological%20level.)
 - [The Color API - Scheme Reference](https://www.thecolorapi.com/docs#schemes-generate-scheme-get)
+- [Rapid Tables - Color Scheme Generator](https://www.rapidtables.com/web/color/color-scheme.html)
+- [Math behind colorspace conversions, RGB-HSL](https://www.niwa.nu/2013/05/math-behind-colorspace-conversions-rgb-hsl/)
