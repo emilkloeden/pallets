@@ -11,7 +11,7 @@ This application will generate a range of color palletes using optional filters:
   -- Triadic
   -- Tetradic
 - Color (name or hex representation), number of supplied arguments cannot exceed that which a color pallet ruling would define (e.g. not two if 'Monochromatic' is chosen). Supplying blue and green should only return a pallet that contains both these colors, not either of those.
-  -- \*This is potentially tricky and may want to be rethought as choosing two colors may be valid, but the combination of those two might not be valid for that theme.
+  - This is potentially tricky and may want to be rethought as choosing two colors may be valid, but the combination of those two might not be valid for that theme.
 
 # Technical Note
 
