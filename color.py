@@ -1,4 +1,7 @@
 import random
+from rich.console import Console, ConsoleOptions, RenderResult
+from rich.segment import Segment
+from rich.style import Style
 
 class Color:
     def __init__(self, *, hex_code=None, rgb=None, red=None, green=None, blue=None, hsl=None, hue=None, saturation=None, lightness=None) -> None:
@@ -38,6 +41,7 @@ class Color:
         rgb = f"rgb({self.red},{self.green},{self.blue})"
         hsl = f"hsl({self.hue},{self.saturation*100:.1f}%,{self.lightness*100:.1f}%)"
         return f"{self.__class__.__name__}({self.hex_code}, {rgb}, {hsl})"
+
     
     def normalise_hex_code(self, hex_code):
         return hex_code if hex_code[0] == "#" else f"#{hex_code}"
@@ -146,3 +150,7 @@ def generate_random_color():
     green = random.randint(0, 255)
     blue = random.randint(0, 255)
     return Color(red=red, green=green, blue=blue)
+
+RED = Color(rgb=(255, 0, 0))
+GREEN = Color(rgb=(0, 255, 0))
+BLUE = Color(rgb=(0, 0, 255))
