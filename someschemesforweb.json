@@ -1,0 +1,589 @@
+[
+  {
+    "name": "Bulbous Banks",
+    "scheme_type": "random",
+    "colors": [
+      "#86f6a7",
+      "#f9f2c8",
+      "#719381",
+      "#2198c3",
+      "#5ec9a2",
+      "#9f0e0a",
+      "#93722a",
+      "#40db06"
+    ]
+  },
+  {
+    "name": "Grooved Spittles",
+    "scheme_type": "random",
+    "colors": [
+      "#721c04",
+      "#c520ab",
+      "#a73cfa",
+      "#2ed23b",
+      "#06d43c",
+      "#287dbe"
+    ]
+  },
+  {
+    "name": "Strong Dangers",
+    "scheme_type": "random",
+    "colors": [
+      "#1afcc4",
+      "#a07fd3",
+      "#e2f56f",
+      "#c4f995"
+    ]
+  },
+  {
+    "name": "Inconsiderate Legends",
+    "scheme_type": "random",
+    "colors": [
+      "#bb528e",
+      "#7b861a",
+      "#5ca1dc",
+      "#446632"
+    ]
+  },
+  {
+    "name": "Buff Fortifications",
+    "scheme_type": "random",
+    "colors": [
+      "#e35c71",
+      "#327c6e",
+      "#8e88ab"
+    ]
+  },
+  {
+    "name": "Dented Patterns",
+    "scheme_type": "random",
+    "colors": [
+      "#7e5801",
+      "#81bf45",
+      "#7986c9"
+    ]
+  },
+  {
+    "name": "Afflicted Soaps",
+    "scheme_type": "random",
+    "colors": [
+      "#6d76f1",
+      "#f7d858",
+      "#34b440",
+      "#cd204f",
+      "#e67cca",
+      "#b1c68c",
+      "#068c5d"
+    ]
+  },
+  {
+    "name": "Diamond Meadows",
+    "scheme_type": "random",
+    "colors": [
+      "#3a48d8",
+      "#79a441",
+      "#3fcd50",
+      "#0dcc3b",
+      "#ad9c1c",
+      "#adc2b8",
+      "#69fc14"
+    ]
+  },
+  {
+    "name": "Poetic Shovels",
+    "scheme_type": "random",
+    "colors": [
+      "#6fb6d7",
+      "#8654fd",
+      "#242db8",
+      "#8b7a8d",
+      "#a6b953",
+      "#c6a42f",
+      "#bcd2f9",
+      "#103abb"
+    ]
+  },
+  {
+    "name": "Squashed Glows",
+    "scheme_type": "random",
+    "colors": [
+      "#5424e4",
+      "#f9fbd0",
+      "#634f4d",
+      "#7d7511",
+      "#b51c58"
+    ]
+  },
+  {
+    "name": "Slitted Savants",
+    "scheme_type": "random",
+    "colors": [
+      "#cd0428",
+      "#d227b0",
+      "#4abc39",
+      "#cfd381",
+      "#4be61e",
+      "#22e026",
+      "#c799f2",
+      "#d1927c"
+    ]
+  },
+  {
+    "name": "Buff Quests",
+    "scheme_type": "random",
+    "colors": [
+      "#4317bb",
+      "#74c501",
+      "#69a50b"
+    ]
+  },
+  {
+    "name": "Mirthful Slits",
+    "scheme_type": "random",
+    "colors": [
+      "#a5d33c",
+      "#297752",
+      "#51e625",
+      "#4b5801",
+      "#3c2091",
+      "#bcba81",
+      "#4bded3",
+      "#29d51f",
+      "#2e2744"
+    ]
+  },
+  {
+    "name": "Teal Combats",
+    "scheme_type": "random",
+    "colors": [
+      "#6e57b9",
+      "#bfca2c",
+      "#980e82",
+      "#891226",
+      "#1a3e5a",
+      "#5ee578",
+      "#45aa2c"
+    ]
+  },
+  {
+    "name": "Past Silences",
+    "scheme_type": "random",
+    "colors": [
+      "#d2afff",
+      "#321e37",
+      "#ceebaa",
+      "#d97332"
+    ]
+  },
+  {
+    "name": "Patterned Works",
+    "scheme_type": "random",
+    "colors": [
+      "#138ff2",
+      "#13698a",
+      "#9d68cb",
+      "#65e794",
+      "#6d223a",
+      "#2d2bd6",
+      "#5937e4",
+      "#7207ba"
+    ]
+  },
+  {
+    "name": "Future Wings",
+    "scheme_type": "random",
+    "colors": [
+      "#62db23",
+      "#eeebe4",
+      "#9c54a0",
+      "#dca170",
+      "#10fddf",
+      "#d06224",
+      "#29993d"
+    ]
+  },
+  {
+    "name": "Excavated Festivals",
+    "scheme_type": "random",
+    "colors": [
+      "#884c4e",
+      "#7f8d95",
+      "#9afb5a",
+      "#98095f",
+      "#e84683",
+      "#891a62",
+      "#85afca",
+      "#59246d"
+    ]
+  },
+  {
+    "name": "Ferocious Squares",
+    "scheme_type": "random",
+    "colors": [
+      "#92ae87",
+      "#ce6664",
+      "#1fe6d0",
+      "#85f46e",
+      "#1c3762"
+    ]
+  },
+  {
+    "name": "Sour Salutes",
+    "scheme_type": "random",
+    "colors": [
+      "#c6c3e0",
+      "#0caa79",
+      "#205935"
+    ]
+  },
+  {
+    "name": "Infamous Bones",
+    "scheme_type": "random",
+    "colors": [
+      "#c37cfa",
+      "#182bb5",
+      "#c6a7f8"
+    ]
+  },
+  {
+    "name": "Confining Racks",
+    "scheme_type": "random",
+    "colors": [
+      "#a9f5a8",
+      "#97d22f",
+      "#66ab30",
+      "#af17b2"
+    ]
+  },
+  {
+    "name": "Clean Palisades",
+    "scheme_type": "random",
+    "colors": [
+      "#ecbe75",
+      "#cdca05",
+      "#26da94",
+      "#01dd41",
+      "#6e9bbd"
+    ]
+  },
+  {
+    "name": "Fragrant Peaches",
+    "scheme_type": "random",
+    "colors": [
+      "#c4ad5f",
+      "#cf65cc",
+      "#5ba53a",
+      "#6847ba"
+    ]
+  },
+  {
+    "name": "Lurid Zealots",
+    "scheme_type": "random",
+    "colors": [
+      "#627738",
+      "#ca2d3e",
+      "#815bc9"
+    ]
+  },
+  {
+    "name": "Coincidental Whiskies",
+    "scheme_type": "random",
+    "colors": [
+      "#d189a6",
+      "#54efff",
+      "#b2b35b",
+      "#2b31d5",
+      "#8e2e9b",
+      "#15fbdc",
+      "#6dc79d",
+      "#117288",
+      "#c50459"
+    ]
+  },
+  {
+    "name": "Carmine Visionaries",
+    "scheme_type": "random",
+    "colors": [
+      "#e22971",
+      "#5058f9",
+      "#11133d",
+      "#a24647",
+      "#759d20",
+      "#1f257b",
+      "#c029e5"
+    ]
+  },
+  {
+    "name": "Alchemical Competitions",
+    "scheme_type": "random",
+    "colors": [
+      "#7ddd49",
+      "#697fc2",
+      "#8d303e",
+      "#e9a9fc",
+      "#32b9f6",
+      "#4e7b4a"
+    ]
+  },
+  {
+    "name": "Virtuous Forever",
+    "scheme_type": "random",
+    "colors": [
+      "#cf17e8",
+      "#339d5d",
+      "#f3447c",
+      "#8f0d2b",
+      "#d0abd5"
+    ]
+  },
+  {
+    "name": "Grieving Gems",
+    "scheme_type": "random",
+    "colors": [
+      "#e1e5a0",
+      "#47c4ab",
+      "#748df9",
+      "#583a02",
+      "#88ae05",
+      "#b22975",
+      "#4792dd",
+      "#fea7e1"
+    ]
+  },
+  {
+    "name": "Contingent Spoils",
+    "scheme_type": "random",
+    "colors": [
+      "#236145",
+      "#31eecd",
+      "#70e292",
+      "#e78e2f",
+      "#c3f17a"
+    ]
+  },
+  {
+    "name": "Full Blacknesses",
+    "scheme_type": "random",
+    "colors": [
+      "#d33d3b",
+      "#092b9f",
+      "#dde3d9",
+      "#861106",
+      "#c582d2",
+      "#816e92"
+    ]
+  },
+  {
+    "name": "Scraped Burials",
+    "scheme_type": "random",
+    "colors": [
+      "#104933",
+      "#d9ad1e",
+      "#87beec",
+      "#a0432e",
+      "#6049d7",
+      "#6148b4",
+      "#670aa0",
+      "#7a9d3e"
+    ]
+  },
+  {
+    "name": "Distinct Venoms",
+    "scheme_type": "random",
+    "colors": [
+      "#0fd46c",
+      "#216545",
+      "#2b82dc",
+      "#9519da",
+      "#644567",
+      "#e5c7f2",
+      "#e2be02",
+      "#92f902",
+      "#970499"
+    ]
+  },
+  {
+    "name": "Pure Apogees",
+    "scheme_type": "random",
+    "colors": [
+      "#3a99d6",
+      "#fac3cf",
+      "#500f12",
+      "#49453a",
+      "#4cc4f2",
+      "#0466c6",
+      "#6977f1"
+    ]
+  },
+  {
+    "name": "Reclusive Blazes",
+    "scheme_type": "random",
+    "colors": [
+      "#c6ff47",
+      "#5f2e4b",
+      "#a4a691",
+      "#da786b",
+      "#6ad1df",
+      "#a67061",
+      "#deebd2",
+      "#ed6b84"
+    ]
+  },
+  {
+    "name": "Chunky Lights",
+    "scheme_type": "random",
+    "colors": [
+      "#a2816d",
+      "#ae8f3c",
+      "#e4139f"
+    ]
+  },
+  {
+    "name": "True Containers",
+    "scheme_type": "random",
+    "colors": [
+      "#743e7b",
+      "#c82f7c",
+      "#9a350b",
+      "#16a5bf"
+    ]
+  },
+  {
+    "name": "Skinny Girls",
+    "scheme_type": "random",
+    "colors": [
+      "#e0ed0a",
+      "#fe9d1b",
+      "#31c3b4",
+      "#6666c4",
+      "#097ac6"
+    ]
+  },
+  {
+    "name": "Revered Artifices",
+    "scheme_type": "random",
+    "colors": [
+      "#0b2ac3",
+      "#41725e",
+      "#0d9e8f",
+      "#bd6cdc"
+    ]
+  },
+  {
+    "name": "Gilded Subtleties",
+    "scheme_type": "random",
+    "colors": [
+      "#3ba40a",
+      "#79996d",
+      "#b83278",
+      "#f835d7",
+      "#b3e645",
+      "#801e31",
+      "#e7aa7a",
+      "#81f8af",
+      "#3d2410"
+    ]
+  },
+  {
+    "name": "Blotted Cooks",
+    "scheme_type": "random",
+    "colors": [
+      "#4258aa",
+      "#d967f2",
+      "#0a5a7a",
+      "#965753",
+      "#b83682",
+      "#d10195",
+      "#9a9e3e"
+    ]
+  },
+  {
+    "name": "Mellow Veils",
+    "scheme_type": "random",
+    "colors": [
+      "#5d5798",
+      "#f2413d",
+      "#c0a7b5"
+    ]
+  },
+  {
+    "name": "Spongy Stumps",
+    "scheme_type": "random",
+    "colors": [
+      "#dd1267",
+      "#8c6886",
+      "#9dda23",
+      "#7e59a6",
+      "#027ec3",
+      "#72c7f5",
+      "#43ee29",
+      "#7229e6"
+    ]
+  },
+  {
+    "name": "Corrupt Greases",
+    "scheme_type": "random",
+    "colors": [
+      "#862322",
+      "#25bd93",
+      "#a92e01",
+      "#1c1a96",
+      "#2254ec",
+      "#2d16f4",
+      "#997b77"
+    ]
+  },
+  {
+    "name": "Relieved Fishes",
+    "scheme_type": "random",
+    "colors": [
+      "#52a15e",
+      "#ff9a1d",
+      "#e59f34",
+      "#be0a00",
+      "#1a2935",
+      "#6cad6e",
+      "#e6b2ec",
+      "#ea35bf"
+    ]
+  },
+  {
+    "name": "Ambiguous Loots",
+    "scheme_type": "random",
+    "colors": [
+      "#0f3e79",
+      "#c63e9b",
+      "#afcd68",
+      "#5787d0",
+      "#aa3ef7"
+    ]
+  },
+  {
+    "name": "Somber Showers",
+    "scheme_type": "random",
+    "colors": [
+      "#d4fdce",
+      "#61c24e",
+      "#f0dd69"
+    ]
+  },
+  {
+    "name": "Smooth Calamities",
+    "scheme_type": "random",
+    "colors": [
+      "#9b7ce0",
+      "#cf4bb5",
+      "#5e0cf3"
+    ]
+  },
+  {
+    "name": "Rumored Dimensions",
+    "scheme_type": "random",
+    "colors": [
+      "#0f4a33",
+      "#815b2a",
+      "#812552",
+      "#e66c86"
+    ]
+  }
+]

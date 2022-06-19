@@ -3,18 +3,34 @@ from rich.console import Console, ConsoleOptions, RenderResult
 from rich.segment import Segment
 from rich.style import Style
 
+from css import keywords_to_hex_codes, hex_codes_to_keywords 
+
 class Color:
-    def __init__(self, *, hex_code=None, rgb=None, red=None, green=None, blue=None, hsl=None, hue=None, saturation=None, lightness=None) -> None:
-        if hex_code:
+    def __init__(self, *, css=None, hex_code=None, rgb=None, red=None, green=None, blue=None, hsl=None, hue=None, saturation=None, lightness=None) -> None:
+        self.css = None
+
+        if css:
+            if css.lower() not in keywords_to_hex_codes:
+                raise ValueError(f"Unable to create Color from unrecognized css color keyword '{css}'.")
+            self.css = css.lower()
+            hex_code = keywords_to_hex_codes[self.css]
             self.hex_code = self.normalise_hex_code(hex_code)
             self.hex_2_rgb()
             self.rgb_2_hsl()
+            
+        elif hex_code:
+            self.hex_code = self.normalise_hex_code(hex_code)
+            self.hex_2_rgb()
+            self.rgb_2_hsl()
+            self.maybe_set_css_from_hex()
             
         elif rgb:
             self.rgb = rgb
             self.red, self.green, self.blue = rgb
             self.rgb_2_hex()
             self.rgb_2_hsl()
+            self.maybe_set_css_from_hex()
+
         elif _all_red_green_blue_supplied_and_valid(red, green, blue):
             self.red = red
             self.green = green
@@ -22,11 +38,15 @@ class Color:
             self.rgb = (self.red, self.green, self.blue)
             self.rgb_2_hex()
             self.rgb_2_hsl()
+            self.maybe_set_css_from_hex()
+
         elif hsl:
             self.hsl = hsl
             self.hue, self.saturation, self.lightness = self.hsl
             self.hsl_2_rgb()
             self.rgb_2_hex()
+            self.maybe_set_css_from_hex()
+
         elif 0 <= hue <= 360 and 0 <= saturation <= 1 and 0 <= lightness <= 1:
             self.hue = hue
             self.saturation = saturation
@@ -34,17 +54,22 @@ class Color:
             self.hsl = (self.hue, self.saturation, self.lightness)
             self.hsl_2_rgb()
             self.rgb_2_hex()
+            self.maybe_set_css_from_hex()
+
         else:
             raise TypeError(f"Unable to initialise Color object with arguments: ")
 
     def __repr__(self):
         rgb = f"rgb({self.red},{self.green},{self.blue})"
         hsl = f"hsl({self.hue},{self.saturation*100:.1f}%,{self.lightness*100:.1f}%)"
-        return f"{self.__class__.__name__}({self.hex_code}, {rgb}, {hsl})"
+        css = f" '{self.css}'" if self.css else ""
+        return f"{self.__class__.__name__}({self.hex_code}, {rgb}, {hsl}{css})"
 
+    def __eq__(self, other):
+        return self.hex_code == other.hex_code
     
     def normalise_hex_code(self, hex_code):
-        return hex_code if hex_code[0] == "#" else f"#{hex_code}"
+        return hex_code.lower() if hex_code[0] == "#" else f"#{hex_code.lower()}"
 
     def hex_2_rgb(self):
         self.red = int(self.hex_code[1:3], 16)
@@ -133,6 +158,10 @@ class Color:
         self.green = green
         self.blue = blue
         self.rgb = (self.red, self.green, self.blue)
+
+    def maybe_set_css_from_hex(self):
+        if self.hex_code in hex_codes_to_keywords:
+            self.css = hex_codes_to_keywords[self.hex_code]
             
 
 def _all_red_green_blue_supplied_and_valid(red, green, blue) -> bool :
@@ -154,3 +183,4 @@ def generate_random_color():
 RED = Color(rgb=(255, 0, 0))
 GREEN = Color(rgb=(0, 255, 0))
 BLUE = Color(rgb=(0, 0, 255))
+CRIMSON = Color(css="crimson")

@@ -1,0 +1,1500 @@
+[
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Bulbous Banks",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#86f6a7"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#f9f2c8"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#719381"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#2198c3"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#5ec9a2"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#9f0e0a"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#93722a"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#40db06"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Grooved Spittles",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#721c04"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#c520ab"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#a73cfa"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#2ed23b"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#06d43c"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#287dbe"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Strong Dangers",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#1afcc4"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#a07fd3"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#e2f56f"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#c4f995"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Inconsiderate Legends",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#bb528e"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#7b861a"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#5ca1dc"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#446632"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Buff Fortifications",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#e35c71"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#327c6e"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#8e88ab"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Dented Patterns",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#7e5801"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#81bf45"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#7986c9"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Afflicted Soaps",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#6d76f1"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#f7d858"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#34b440"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#cd204f"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#e67cca"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#b1c68c"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#068c5d"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Diamond Meadows",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#3a48d8"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#79a441"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#3fcd50"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#0dcc3b"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#ad9c1c"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#adc2b8"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#69fc14"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Poetic Shovels",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#6fb6d7"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#8654fd"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#242db8"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#8b7a8d"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#a6b953"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#c6a42f"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#bcd2f9"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#103abb"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Squashed Glows",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#5424e4"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#f9fbd0"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#634f4d"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#7d7511"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#b51c58"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Slitted Savants",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#cd0428"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#d227b0"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#4abc39"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#cfd381"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#4be61e"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#22e026"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#c799f2"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#d1927c"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Buff Quests",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#4317bb"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#74c501"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#69a50b"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Mirthful Slits",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#a5d33c"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#297752"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#51e625"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#4b5801"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#3c2091"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#bcba81"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#4bded3"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#29d51f"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#2e2744"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Teal Combats",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#6e57b9"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#bfca2c"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#980e82"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#891226"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#1a3e5a"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#5ee578"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#45aa2c"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Past Silences",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#d2afff"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#321e37"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#ceebaa"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#d97332"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Patterned Works",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#138ff2"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#13698a"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#9d68cb"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#65e794"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#6d223a"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#2d2bd6"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#5937e4"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#7207ba"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Future Wings",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#62db23"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#eeebe4"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#9c54a0"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#dca170"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#10fddf"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#d06224"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#29993d"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Excavated Festivals",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#884c4e"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#7f8d95"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#9afb5a"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#98095f"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#e84683"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#891a62"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#85afca"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#59246d"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Ferocious Squares",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#92ae87"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#ce6664"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#1fe6d0"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#85f46e"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#1c3762"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Sour Salutes",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#c6c3e0"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#0caa79"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#205935"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Infamous Bones",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#c37cfa"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#182bb5"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#c6a7f8"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Confining Racks",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#a9f5a8"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#97d22f"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#66ab30"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#af17b2"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Clean Palisades",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#ecbe75"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#cdca05"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#26da94"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#01dd41"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#6e9bbd"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Fragrant Peaches",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#c4ad5f"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#cf65cc"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#5ba53a"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#6847ba"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Lurid Zealots",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#627738"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#ca2d3e"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#815bc9"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Coincidental Whiskies",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#d189a6"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#54efff"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#b2b35b"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#2b31d5"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#8e2e9b"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#15fbdc"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#6dc79d"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#117288"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#c50459"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Carmine Visionaries",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#e22971"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#5058f9"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#11133d"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#a24647"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#759d20"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#1f257b"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#c029e5"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Alchemical Competitions",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#7ddd49"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#697fc2"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#8d303e"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#e9a9fc"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#32b9f6"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#4e7b4a"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Virtuous Forever",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#cf17e8"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#339d5d"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#f3447c"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#8f0d2b"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#d0abd5"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Grieving Gems",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#e1e5a0"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#47c4ab"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#748df9"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#583a02"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#88ae05"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#b22975"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#4792dd"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#fea7e1"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Contingent Spoils",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#236145"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#31eecd"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#70e292"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#e78e2f"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#c3f17a"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Full Blacknesses",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#d33d3b"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#092b9f"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#dde3d9"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#861106"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#c582d2"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#816e92"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Scraped Burials",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#104933"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#d9ad1e"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#87beec"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#a0432e"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#6049d7"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#6148b4"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#670aa0"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#7a9d3e"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Distinct Venoms",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#0fd46c"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#216545"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#2b82dc"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#9519da"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#644567"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#e5c7f2"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#e2be02"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#92f902"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#970499"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Pure Apogees",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#3a99d6"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#fac3cf"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#500f12"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#49453a"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#4cc4f2"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#0466c6"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#6977f1"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Reclusive Blazes",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#c6ff47"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#5f2e4b"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#a4a691"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#da786b"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#6ad1df"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#a67061"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#deebd2"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#ed6b84"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Chunky Lights",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#a2816d"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#ae8f3c"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#e4139f"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "True Containers",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#743e7b"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#c82f7c"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#9a350b"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#16a5bf"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Skinny Girls",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#e0ed0a"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#fe9d1b"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#31c3b4"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#6666c4"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#097ac6"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Revered Artifices",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#0b2ac3"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#41725e"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#0d9e8f"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#bd6cdc"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Gilded Subtleties",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#3ba40a"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#79996d"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#b83278"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#f835d7"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#b3e645"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#801e31"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#e7aa7a"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#81f8af"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#3d2410"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Blotted Cooks",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#4258aa"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#d967f2"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#0a5a7a"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#965753"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#b83682"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#d10195"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#9a9e3e"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Mellow Veils",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#5d5798"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#f2413d"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#c0a7b5"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Spongy Stumps",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#dd1267"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#8c6886"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#9dda23"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#7e59a6"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#027ec3"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#72c7f5"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#43ee29"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#7229e6"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Corrupt Greases",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#862322"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#25bd93"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#a92e01"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#1c1a96"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#2254ec"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#2d16f4"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#997b77"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Relieved Fishes",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#52a15e"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#ff9a1d"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#e59f34"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#be0a00"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#1a2935"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#6cad6e"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#e6b2ec"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#ea35bf"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Ambiguous Loots",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#0f3e79"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#c63e9b"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#afcd68"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#5787d0"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#aa3ef7"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Somber Showers",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#d4fdce"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#61c24e"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#f0dd69"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Smooth Calamities",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#9b7ce0"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#cf4bb5"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#5e0cf3"
+      }
+    ]
+  },
+  {
+    "__obj_type": "ColorScheme",
+    "name": "Rumored Dimensions",
+    "scheme_type": "random",
+    "primary": {
+      "__obj_type": "Color",
+      "hex_code": "#0f4a33"
+    },
+    "rest": [
+      {
+        "__obj_type": "Color",
+        "hex_code": "#815b2a"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#812552"
+      },
+      {
+        "__obj_type": "Color",
+        "hex_code": "#e66c86"
+      }
+    ]
+  }
+]
