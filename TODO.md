@@ -22,6 +22,7 @@
 
 ### General
 
+- [ ] Documentation! Especially Docstrings (https://www.sphinx-doc.org/en/master/usage/extensions/example_google.html). At present there aren't any :/
 - [ ] Clean up files in repo
 - [ ] Get package onto PyPI?
 - [ ] Separate applications for scheme generation and filtering/viewing?
