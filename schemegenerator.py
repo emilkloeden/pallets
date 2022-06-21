@@ -1,4 +1,5 @@
 import random
+from typing import List
 
 from scheme import ColorScheme
 from color import Color, generate_random_color
@@ -7,7 +8,7 @@ from namegenerator import generate_name
 DEFAULT_NUMBER_OF_COLORS_IN_A_SCHEME = 4
 MIN_NUMBER_OF_COLORS_IN_A_SCHEME = 2
 MAX_NUMBER_OF_COLORS_IN_A_SCHEME = 10
-
+ 
 
 
 
@@ -18,16 +19,22 @@ def generate_color_scheme(scheme_type: str, primary: Color = None, number_of_col
     
     name = generate_name()
     
-    if scheme_type == "monochromatic":
-        colors = _generate_monochromatic_theme(name, primary, number_of_colors)
-    elif scheme_type == "random":
-        colors = _generate_random_color_scheme(name, number_of_colors)
-    else:
+    scheme_generator = _scheme_generators.get(scheme_type)
+    if not scheme_generator:
         raise ValueError(f"Unrecognised scheme_type '{scheme_type}' supplied.")
 
-    return renderer(name=name, scheme_type=scheme_type, primary=colors[0], rest=colors[1:])
+    
+    colors = scheme_generator(primary=primary, number_of_colors=number_of_colors)
+    if not primary:
+        primary = colors[0]
+        rest = colors[1:]
+    else:
+        i = colors.index(primary)
+        rest = colors[:i] + colors[i+1:]
 
-def _generate_monochromatic_theme(name: str, primary: Color = None, number_of_colors: int = DEFAULT_NUMBER_OF_COLORS_IN_A_SCHEME):
+    return renderer(name=name, scheme_type=scheme_type, primary=primary, rest=rest)
+
+def _generate_monochromatic_theme(primary: Color = None, number_of_colors: int = DEFAULT_NUMBER_OF_COLORS_IN_A_SCHEME) -> List[Color]:
     # Work out if I should do rounding here or not
     if not primary:
         primary = generate_random_color()
@@ -50,15 +57,24 @@ def _generate_monochromatic_theme(name: str, primary: Color = None, number_of_co
         in all_lightness_values
     ]
     
-    return colors
+    return sorted(colors, key=lambda color: color.hex_code)
     # return ColorScheme(name=name, scheme_type="monochromatic", primary=colors[0], rest=colors[1:])
 
-def _generate_random_color_scheme(name: str, number_of_colors: int = DEFAULT_NUMBER_OF_COLORS_IN_A_SCHEME):
-    colors = [
+def _generate_random_color_scheme(primary: Color = None, number_of_colors: int = DEFAULT_NUMBER_OF_COLORS_IN_A_SCHEME) -> List[Color]:
+    length = number_of_colors - 1 if primary else number_of_colors
+    
+    rest = [
         generate_random_color()
         for _ 
-        in range(number_of_colors)
+        in range(length)
     ]
+    
+    if primary:
+        return [primary] + rest
+    return rest
 
-    return colors
-    # return ColorScheme(name=name, scheme_type="random", primary=colors[0], rest=colors[1:])
+
+_scheme_generators = {
+    "monochromatic": _generate_monochromatic_theme,
+    "random": _generate_random_color_scheme,
+}
