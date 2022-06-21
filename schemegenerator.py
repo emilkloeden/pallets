@@ -12,18 +12,20 @@ MAX_NUMBER_OF_COLORS_IN_A_SCHEME = 10
 
 
 
-def generate_color_scheme(scheme_type: str, primary: Color = None, number_of_colors: int = DEFAULT_NUMBER_OF_COLORS_IN_A_SCHEME) -> ColorScheme:
+def generate_color_scheme(scheme_type: str, primary: Color = None, number_of_colors: int = DEFAULT_NUMBER_OF_COLORS_IN_A_SCHEME, renderer=ColorScheme) -> ColorScheme:
     if number_of_colors < MIN_NUMBER_OF_COLORS_IN_A_SCHEME or number_of_colors > MAX_NUMBER_OF_COLORS_IN_A_SCHEME:
         raise ValueError(f"Invalid number of colors requested. Supply a number between {MIN_NUMBER_OF_COLORS_IN_A_SCHEME} and {MAX_NUMBER_OF_COLORS_IN_A_SCHEME}")
     
     name = generate_name()
     
     if scheme_type == "monochromatic":
-        return _generate_monochromatic_theme(name, primary, number_of_colors)
+        colors = _generate_monochromatic_theme(name, primary, number_of_colors)
     elif scheme_type == "random":
-        return _generate_random_color_scheme(name, number_of_colors)
+        colors = _generate_random_color_scheme(name, number_of_colors)
+    else:
+        raise ValueError(f"Unrecognised scheme_type '{scheme_type}' supplied.")
 
-    raise ValueError(f"Unrecognised scheme_type '{scheme_type}' supplied.")
+    return renderer(name=name, scheme_type=scheme_type, primary=colors[0], rest=colors[1:])
 
 def _generate_monochromatic_theme(name: str, primary: Color = None, number_of_colors: int = DEFAULT_NUMBER_OF_COLORS_IN_A_SCHEME):
     # Work out if I should do rounding here or not
@@ -48,7 +50,8 @@ def _generate_monochromatic_theme(name: str, primary: Color = None, number_of_co
         in all_lightness_values
     ]
     
-    return ColorScheme(name=name, scheme_type="monochromatic", primary=colors[0], rest=colors[1:])
+    return colors
+    # return ColorScheme(name=name, scheme_type="monochromatic", primary=colors[0], rest=colors[1:])
 
 def _generate_random_color_scheme(name: str, number_of_colors: int = DEFAULT_NUMBER_OF_COLORS_IN_A_SCHEME):
     colors = [
@@ -57,4 +60,5 @@ def _generate_random_color_scheme(name: str, number_of_colors: int = DEFAULT_NUM
         in range(number_of_colors)
     ]
 
-    return ColorScheme(name=name, scheme_type="random", primary=colors[0], rest=colors[1:])
+    return colors
+    # return ColorScheme(name=name, scheme_type="random", primary=colors[0], rest=colors[1:])

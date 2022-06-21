@@ -17,7 +17,6 @@
 
 ### Other
 
-- [ ] Pull `rich`-specific code out of ColorScheme class
 - [ ] Database persistence? When do we want to generate schemes and when do we want to just view previously generated themes?
 
 ### General
@@ -39,3 +38,4 @@
 - [x] Monochromatic color scheme generator function
 - [x] Random color scheme generator function
 - [x] Some form of UI to view color schemes in the terminal - see `columnpanelui.py`
+- [x] Pull `rich`-specific code out of ColorScheme class
