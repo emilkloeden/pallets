@@ -9,7 +9,8 @@
 ### Color scheme functions
 
 - [ ] Monochromatic color scheme generator function with precise steps between levels (current version uses random values)
-- [ ] Analogous color scheme generator function
+- [ ] Analogous color scheme generator function with a little more precision when > 3 values chosen (current version uses precise hue and random saturation and lightness values for a random choice of the first three values)
+- [ ] An Analogous colour scheme generator function that allows for random steps in hues between primary, secondary and tertiary colours (current version increments by exactly 30deg).
 - [ ] Complementary color scheme generator function
 - [ ] Split-complementary color scheme generator function
 - [ ] Triadic color scheme generator function
@@ -38,5 +39,6 @@
 - [x] Scheme generator functionality skeleton
 - [x] Monochromatic color scheme generator function
 - [x] Random color scheme generator function
+- [x] Analogous color scheme generator function
 - [x] Some form of UI to view color schemes in the terminal - see `columnpanelui.py`
 - [x] Pull `rich`-specific code out of ColorScheme class

@@ -27,3 +27,4 @@ for red in range(0, 255, step_size):
         for blue  in range(0, 255, step_size):
             print_rgb(red, green, blue)
             # sleep(0.01)
+

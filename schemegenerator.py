@@ -45,17 +45,17 @@ def _generate_monochromatic_theme(primary: Color = None, number_of_colors: int =
     while len(random_lightness_choices) < num_colors_to_generate:
         random_lightness_choices.add(random.random())
     
-    primary_lightness = primary.lightness
+    # primary_lightness = primary.lightness
     all_lightness_values = list(random_lightness_choices)
-    all_lightness_values.append(primary_lightness)
     all_lightness_values.append(0)
     all_lightness_values.append(1)
-    all_lightness_values = sorted(all_lightness_values)
+    # all_lightness_values = sorted(all_lightness_values)
     colors = [
         Color(hue=primary.hue, saturation=primary.saturation, lightness=lightness)
         for lightness
         in all_lightness_values
     ]
+    colors.append(primary)
     
     return sorted(colors, key=lambda color: color.hex_code)
     # return ColorScheme(name=name, scheme_type="monochromatic", primary=colors[0], rest=colors[1:])
@@ -73,8 +73,26 @@ def _generate_random_color_scheme(primary: Color = None, number_of_colors: int =
         return [primary] + rest
     return rest
 
+def _generate_analogous_theme(primary: Color = None, number_of_colors: int = DEFAULT_NUMBER_OF_COLORS_IN_A_SCHEME) -> List[Color]:
+    if not primary:
+        primary = generate_random_color()
+    
+    if number_of_colors < 3:
+        raise ValueError("Analogous schemes require at least three colours.")
+    primary_hue = primary.hue
+    secondary_hue = (primary.hue + 30) % 360
+    tertiary_hue = (primary.hue + 60) % 360
+    secondary = Color(hsl=(secondary_hue, primary.saturation, primary.lightness))
+    tertiary = Color(hsl=(tertiary_hue, primary.saturation, primary.lightness))
+
+    colors = [primary, secondary, tertiary]
+    while len(colors) < number_of_colors:
+        colors.append(Color(hue=random.choice([primary_hue, secondary_hue, tertiary_hue]), saturation=random.random(), lightness=random.random()))
+
+    return colors
 
 _scheme_generators = {
     "monochromatic": _generate_monochromatic_theme,
+    "analogous": _generate_analogous_theme,
     "random": _generate_random_color_scheme,
 }

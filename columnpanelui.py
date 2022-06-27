@@ -7,22 +7,41 @@ from rich.panel import Panel
 from consoleschemerenderer import ColorSchemeConsole
 
 from schemegenerator import generate_color_scheme
-from color import RED, GREEN, BLUE
+from color import Color, RED, GREEN, BLUE
 
 primary_colors = [RED, GREEN, BLUE]
 
+nicer_colors = [
+    Color(css="cornflowerblue"),
+    Color(css="darkslategray"),
+    Color(css="maroon")
+]
+
 schemes = [
-    generate_color_scheme(scheme_type="random", primary=random.choice(primary_colors), number_of_colors=random.randint(3, 9), renderer=ColorSchemeConsole)
+    generate_color_scheme(scheme_type="random", primary=random.choice(nicer_colors), number_of_colors=random.randint(7, 7), renderer=ColorSchemeConsole)
     for _
-    in range(10)
+    in range(20)
 ]
 monochrome_schemes = [
     generate_color_scheme(scheme_type="monochromatic", primary=RED, number_of_colors=8, renderer=ColorSchemeConsole),
     generate_color_scheme(scheme_type="monochromatic", primary=GREEN, number_of_colors=8, renderer=ColorSchemeConsole),
     generate_color_scheme(scheme_type="monochromatic", primary=BLUE, number_of_colors=8, renderer=ColorSchemeConsole),
+    generate_color_scheme(scheme_type="monochromatic", primary=Color(css="aquamarine"), number_of_colors=8, renderer=ColorSchemeConsole),
+    generate_color_scheme(scheme_type="monochromatic", primary=Color(css="lightseagreen"), number_of_colors=8, renderer=ColorSchemeConsole),
+    
 ]
 
-schemes += monochrome_schemes
+analogous_schemes = [
+    generate_color_scheme(scheme_type="analogous", primary=RED, number_of_colors=8, renderer=ColorSchemeConsole),
+    generate_color_scheme(scheme_type="analogous", primary=GREEN, number_of_colors=8, renderer=ColorSchemeConsole),
+    generate_color_scheme(scheme_type="analogous", primary=BLUE, number_of_colors=8, renderer=ColorSchemeConsole),
+    generate_color_scheme(scheme_type="analogous", primary=Color(css="aquamarine"), number_of_colors=8, renderer=ColorSchemeConsole),
+    generate_color_scheme(scheme_type="analogous", primary=Color(css="lightseagreen"), number_of_colors=8, renderer=ColorSchemeConsole),
+]
+
+schemes = analogous_schemes
+
+# schemes += monochrome_schemes
 console = Console()
 
 
