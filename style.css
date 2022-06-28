@@ -175,6 +175,7 @@ h6 {
   text-align: center;
 
   position: absolute;
+  max-width: 100%;
   z-index: 100;
   margin: 0;
   padding: 0;
@@ -189,6 +190,17 @@ h6 {
 .link {
   /* This value takes into account the viewport height, number of color bars, and size of svg element. In order to place it bang in the center of the viewport */
   top: calc(100vh / 7 * 3.3);
+}
+
+@media (max-width: 500px) {
+  .front {
+    font-size: calc(10vh);
+    line-height: calc(10vh);
+  }
+  .title {
+    /* This value intends to place the title in the horizontal center of the third color bar */
+    top: calc(30vh);
+  }
 }
 
 svg {
