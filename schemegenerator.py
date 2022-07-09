@@ -1,3 +1,12 @@
+"""schemegenerator.py
+
+This module exposes `generate_color_scheme` function.
+
+The `generate_color_scheme` function relies on a number
+of scheme generator functions defined as private functions
+within this module.
+"""
+
 import random
 from typing import List
 
@@ -8,12 +17,25 @@ from namegenerator import generate_name
 DEFAULT_NUMBER_OF_COLORS_IN_A_SCHEME = 4
 MIN_NUMBER_OF_COLORS_IN_A_SCHEME = 2
 MAX_NUMBER_OF_COLORS_IN_A_SCHEME = 10
- 
-
-
 
 
 def generate_color_scheme(scheme_type: str, primary: Color = None, number_of_colors: int = DEFAULT_NUMBER_OF_COLORS_IN_A_SCHEME, renderer=ColorScheme) -> ColorScheme:
+    """Generate a color scheme of `scheme_type` providing an optional base 'primary' Color object, a number of colors to define the scheme size, 
+    and a renderer class, should you wish to use a different renderer
+
+    Args:
+        scheme_type (str): the type of ColorScheme.
+        primary (Color, optional): Primary Color. Defaults to None.
+        number_of_colors (int, optional): Number of colors in the scheme. Defaults to DEFAULT_NUMBER_OF_COLORS_IN_A_SCHEME.
+        renderer (_type_, optional): Optional Rendering class. Defaults to ColorScheme.
+
+    Raises:
+        ValueError: when the number of of colors requested is outside of the range specified by MIN_NUMBER_OF_COLORS_IN_A_SCHEME and MAX_NUMBER_OF_COLORS_IN_A_SCHEME
+        ValueError: when the `scheme_type` value is unrecognised.
+
+    Returns:
+        ColorScheme: An instance of a ColorScheme object.
+    """    
     if number_of_colors < MIN_NUMBER_OF_COLORS_IN_A_SCHEME or number_of_colors > MAX_NUMBER_OF_COLORS_IN_A_SCHEME:
         raise ValueError(f"Invalid number of colors requested. Supply a number between {MIN_NUMBER_OF_COLORS_IN_A_SCHEME} and {MAX_NUMBER_OF_COLORS_IN_A_SCHEME}")
     
@@ -35,7 +57,15 @@ def generate_color_scheme(scheme_type: str, primary: Color = None, number_of_col
     return renderer(name=name, scheme_type=scheme_type, primary=primary, rest=rest)
 
 def _generate_monochromatic_theme(primary: Color = None, number_of_colors: int = DEFAULT_NUMBER_OF_COLORS_IN_A_SCHEME) -> List[Color]:
-    # Work out if I should do rounding here or not
+    """Return a list of Color objects sharing the same hue. Always includes White and Black.
+
+    Args:
+        primary (Color, optional): Primary Color. Defaults to None.
+        number_of_colors (int, optional): Number of Color objects to return. Defaults to DEFAULT_NUMBER_OF_COLORS_IN_A_SCHEME.
+
+    Returns:
+        List[Color]:
+    """    
     if not primary:
         primary = generate_random_color()
     
@@ -61,6 +91,15 @@ def _generate_monochromatic_theme(primary: Color = None, number_of_colors: int =
     # return ColorScheme(name=name, scheme_type="monochromatic", primary=colors[0], rest=colors[1:])
 
 def _generate_random_color_scheme(primary: Color = None, number_of_colors: int = DEFAULT_NUMBER_OF_COLORS_IN_A_SCHEME) -> List[Color]:
+    """Return a list of random Color objects. Will include primary Color if supplied
+
+    Args:
+        primary (Color, optional): Primary Color. Defaults to None.
+        number_of_colors (int, optional): Number of Color objects to return. Defaults to DEFAULT_NUMBER_OF_COLORS_IN_A_SCHEME.
+
+    Returns:
+        List[Color]:
+    """
     length = number_of_colors - 1 if primary else number_of_colors
     
     rest = [
@@ -74,6 +113,18 @@ def _generate_random_color_scheme(primary: Color = None, number_of_colors: int =
     return rest
 
 def _generate_analogous_theme(primary: Color = None, number_of_colors: int = DEFAULT_NUMBER_OF_COLORS_IN_A_SCHEME) -> List[Color]:
+    """Return a list of Color objects composed of different shades of three hues, separated by 30deg. 
+
+    Args:
+        primary (Color, optional): Primary Color. Defaults to None.
+        number_of_colors (int, optional): Number of Color objects to return, minimum of three. Defaults to DEFAULT_NUMBER_OF_COLORS_IN_A_SCHEME.
+
+    Raises:
+        ValueError: when number_of_colors is provided and less than three.
+
+    Returns:
+        List[Color]
+    """
     if not primary:
         primary = generate_random_color()
     
@@ -92,6 +143,18 @@ def _generate_analogous_theme(primary: Color = None, number_of_colors: int = DEF
     return colors
 
 def _generate_triadic_theme(primary: Color = None, number_of_colors: int = DEFAULT_NUMBER_OF_COLORS_IN_A_SCHEME) -> List[Color]:
+    """Return a list of Color objects composed of different shades of three equidistant colors. 
+
+    Args:
+        primary (Color, optional): Primary Color. Defaults to None.
+        number_of_colors (int, optional): Number of Color objects to return, minimum of three. Defaults to DEFAULT_NUMBER_OF_COLORS_IN_A_SCHEME.
+
+    Raises:
+        ValueError: when number_of_colors is provided and less than three.
+
+    Returns:
+        List[Color]
+    """    
     if not primary:
         primary = generate_random_color()
     
