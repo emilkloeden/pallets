@@ -5,6 +5,8 @@ This module exposes `generate_color_scheme` function.
 The `generate_color_scheme` function relies on a number
 of scheme generator functions defined as private functions
 within this module.
+
+Also exposes `scheme_types` a list of valid scheme type values.
 """
 
 import random
@@ -178,3 +180,5 @@ _scheme_generators = {
     "triadic": _generate_triadic_theme,
     "random": _generate_random_color_scheme,
 }
+
+scheme_types = list(_scheme_generators.keys())

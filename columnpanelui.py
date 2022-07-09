@@ -1,6 +1,5 @@
 import random
 
-from rich.align import Align
 from rich.console import Console
 from rich.columns import Columns
 from rich.panel import Panel
