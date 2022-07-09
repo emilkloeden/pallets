@@ -39,7 +39,15 @@ analogous_schemes = [
     generate_color_scheme(scheme_type="analogous", primary=Color(css="lightseagreen"), number_of_colors=8, renderer=ColorSchemeConsole),
 ]
 
-schemes = analogous_schemes
+triadic_schemes = [
+    generate_color_scheme(scheme_type="triadic", primary=RED, number_of_colors=8, renderer=ColorSchemeConsole),
+    generate_color_scheme(scheme_type="triadic", primary=GREEN, number_of_colors=8, renderer=ColorSchemeConsole),
+    generate_color_scheme(scheme_type="triadic", primary=BLUE, number_of_colors=8, renderer=ColorSchemeConsole),
+    generate_color_scheme(scheme_type="triadic", primary=Color(css="aquamarine"), number_of_colors=8, renderer=ColorSchemeConsole),
+    generate_color_scheme(scheme_type="triadic", primary=Color(css="lightseagreen"), number_of_colors=8, renderer=ColorSchemeConsole),
+]
+
+schemes = analogous_schemes + triadic_schemes
 
 # schemes += monochrome_schemes
 console = Console()

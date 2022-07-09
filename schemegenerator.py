@@ -78,7 +78,7 @@ def _generate_analogous_theme(primary: Color = None, number_of_colors: int = DEF
         primary = generate_random_color()
     
     if number_of_colors < 3:
-        raise ValueError("Analogous schemes require at least three colours.")
+        raise ValueError("Analogous schemes must comprise at least three colours.")
     primary_hue = primary.hue
     secondary_hue = (primary.hue + 30) % 360
     tertiary_hue = (primary.hue + 60) % 360
@@ -91,8 +91,27 @@ def _generate_analogous_theme(primary: Color = None, number_of_colors: int = DEF
 
     return colors
 
+def _generate_triadic_theme(primary: Color = None, number_of_colors: int = DEFAULT_NUMBER_OF_COLORS_IN_A_SCHEME) -> List[Color]:
+    if not primary:
+        primary = generate_random_color()
+    
+    if number_of_colors < 3:
+        raise ValueError("Triadic schemes must comprise at least three colours.")
+    primary_hue = primary.hue
+    secondary_hue = (primary.hue + 120) % 360
+    tertiary_hue = (primary.hue + 180) % 360
+    secondary = Color(hsl=(secondary_hue, primary.saturation, primary.lightness))
+    tertiary = Color(hsl=(tertiary_hue, primary.saturation, primary.lightness))
+
+    colors = [primary, secondary, tertiary]
+    while len(colors) < number_of_colors:
+        colors.append(Color(hue=random.choice([primary_hue, secondary_hue, tertiary_hue]), saturation=random.random(), lightness=random.random()))
+
+    return colors
+
 _scheme_generators = {
     "monochromatic": _generate_monochromatic_theme,
     "analogous": _generate_analogous_theme,
+    "triadic": _generate_triadic_theme,
     "random": _generate_random_color_scheme,
 }

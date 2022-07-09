@@ -13,7 +13,6 @@
 - [ ] An Analogous colour scheme generator function that allows for random steps in hues between primary, secondary and tertiary colours (current version increments by exactly 30deg).
 - [ ] Complementary color scheme generator function
 - [ ] Split-complementary color scheme generator function
-- [ ] Triadic color scheme generator function
 - [ ] Tetradic color scheme generator function
 
 ### Other
@@ -40,5 +39,6 @@
 - [x] Monochromatic color scheme generator function
 - [x] Random color scheme generator function
 - [x] Analogous color scheme generator function
+- [x] Triadic color scheme generator function
 - [x] Some form of UI to view color schemes in the terminal - see `columnpanelui.py`
 - [x] Pull `rich`-specific code out of ColorScheme class
