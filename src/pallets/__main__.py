@@ -2,6 +2,7 @@
 
 This module provides a CLI to request the generation of color schemes.
 """
+import argparse
 import random
 
 from typing import List
@@ -11,15 +12,15 @@ from rich.console import Console
 from rich.columns import Columns
 from rich.panel import Panel
 
-from color import Color
-from scheme import ColorScheme
-from schemegenerator import scheme_types as SCHEME_TYPES, generate_color_scheme
-from consoleschemerenderer import ColorSchemeConsole
+from .color import Color
+from .scheme import ColorScheme
+from .schemegenerator import scheme_types as SCHEME_TYPES, generate_color_scheme
+from .consoleschemerenderer import ColorSchemeConsole
 
 
-def parse_arguments():
+def parse_arguments() -> argparse.Namespace:
     parser = ArgumentParser()
-    parser.add_argument("scheme_type", choices=SCHEME_TYPES + ["any"])
+    parser.add_argument("scheme_type", choices=SCHEME_TYPES, default=None, nargs="?")
     parser.add_argument("-n", "--number", type=int, default=5, help="Number of colors in a scheme. Defaults to 5.")
     parser.add_argument("-p", "--primary", type=str, help="Primary color. Hex value or css color name to use as a base for the scheme.")
     parser.add_argument("-m", "--max", type=int, default=5, help="maximum number of color schemes to print. Defaults to 5.")
@@ -27,7 +28,7 @@ def parse_arguments():
     return parser.parse_args()
 
 
-def generate_schemes(args):
+def generate_schemes(args: argparse.Namespace) -> List[ColorScheme]:
     try:
         if args.primary:
             try:
@@ -47,22 +48,22 @@ def generate_schemes(args):
         print(e)
         exit()
 
-def _choose_scheme_type(scheme_type):
+def _choose_scheme_type(scheme_type: str or None):
     """Returns a function call to randomly select from `scheme_type` if `scheme_type` is 'any'
     otherwise it just returns `scheme_type`
 
     Args:
-        scheme_type (str): one of the values of `SCHEME_TYPES` or 'any'
+        scheme_type (str) or None: one of the values of `SCHEME_TYPES` or 'any'
 
     Returns:
         str or random.choice(SCHEME_TYPES)
     """    
-    if scheme_type != "any":
+    if scheme_type:
         return scheme_type
     return random.choice(SCHEME_TYPES)
 
 
-def _get_color_from_string(color_string):
+def _get_color_from_string(color_string: str) -> Color:
     """Return Color object by first attempting to parse `color_string` as a css color name, then as a hex value.
 
     Args:
@@ -77,7 +78,7 @@ def _get_color_from_string(color_string):
         return _get_color_by_hex_code(color_string)
 
 
-def _get_color_by_hex_code(color_string):
+def _get_color_by_hex_code(color_string: str) -> Color:
     return Color(hex_code=color_string)
 
 
@@ -99,7 +100,7 @@ def print_schemes(schemes: List[ColorScheme]) -> None:
     console.print(Columns(panels))
 
 
-def main():
+def main() -> None:
     args = parse_arguments()
     schemes = generate_schemes(args)
     print_schemes(schemes)

@@ -3,10 +3,10 @@ import random
 from rich.console import Console
 from rich.columns import Columns
 from rich.panel import Panel
-from consoleschemerenderer import ColorSchemeConsole
 
-from schemegenerator import generate_color_scheme
-from color import Color, RED, GREEN, BLUE
+from .consoleschemerenderer import ColorSchemeConsole
+from .schemegenerator import generate_color_scheme
+from .color import Color, RED, GREEN, BLUE
 
 primary_colors = [RED, GREEN, BLUE]
 

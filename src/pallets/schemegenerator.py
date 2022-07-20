@@ -12,9 +12,9 @@ Also exposes `scheme_types` a list of valid scheme type values.
 import random
 from typing import List
 
-from scheme import ColorScheme
-from color import Color, generate_random_color
-from namegenerator import generate_name
+from .scheme import ColorScheme
+from .color import Color, generate_random_color
+from .namegenerator import generate_name
 
 DEFAULT_NUMBER_OF_COLORS_IN_A_SCHEME = 4
 MIN_NUMBER_OF_COLORS_IN_A_SCHEME = 2
