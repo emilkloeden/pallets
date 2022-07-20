@@ -1,9 +1,9 @@
 import json
 import random
 
-from color import Color
-from scheme import ColorScheme
-from schemegenerator import generate_color_scheme
+from pallets.color import Color
+from pallets.scheme import ColorScheme
+from pallets.schemegenerator import generate_color_scheme
 
 
 def encode(z):

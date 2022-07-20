@@ -2,7 +2,7 @@ from rich.console import Console, ConsoleOptions, RenderResult
 from rich.segment import Segment, Segments
 from rich.style import Style
 
-from scheme import ColorScheme
+from .scheme import ColorScheme
 
 
 class ColorSchemeConsole(ColorScheme):

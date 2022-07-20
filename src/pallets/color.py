@@ -3,7 +3,7 @@ from rich.console import Console, ConsoleOptions, RenderResult
 from rich.segment import Segment
 from rich.style import Style
 
-from css import keywords_to_hex_codes, hex_codes_to_keywords 
+from .css import keywords_to_hex_codes, hex_codes_to_keywords 
 
 class Color:
     def __init__(self, *, css=None, hex_code=None, rgb=None, red=None, green=None, blue=None, hsl=None, hue=None, saturation=None, lightness=None) -> None:

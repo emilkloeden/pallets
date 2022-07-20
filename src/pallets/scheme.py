@@ -1,6 +1,6 @@
 from typing import List
 
-from color import Color
+from .color import Color
 
 class ColorScheme:
     def __init__(self, name: str, scheme_type: str, primary: Color, rest: List[Color] = None) -> None:

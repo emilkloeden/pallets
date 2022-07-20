@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pallets"
+version = "0.1.0"
+description = "Generate color palletes on the command line"
+readme = "README.md"
+authors = [{ name = "Emil Kloeden", email = "emilkloeden@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["color", "color scheme", "color pallet", "pallet", "color pallete", "colour"]
+dependencies = [
+    "rich >= 12.4.4",
+    'importlib_resources; python_version < "3.9"',
+]
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+dev = ["black", "bumpver", "isort", "pip-tools", "pytest"]
+
+[project.urls]
+Homepage = "https://emilkloeden.github.io/pallets"
+Github = "https://github.com/emilkloeden/pallets"
+
+[project.scripts]
+pallets = "pallets.__main__:main"
