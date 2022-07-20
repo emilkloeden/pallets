@@ -23,8 +23,13 @@
 
 - [ ] Documentation! Especially Docstrings (https://www.sphinx-doc.org/en/master/usage/extensions/example_google.html). At present there aren't any :/
 - [ ] Clean up files in repo
-- [ ] Get package onto PyPI?
 - [ ] Separate applications for scheme generation and filtering/viewing?
+- [ ] Add Black formatting git hook on pre-commit, push?
+- [ ] Tag a release on GitHub
+- [ ] Fix Firefox warning about SVG using calc() in width, height. See (https://css-tricks.com/scale-svg/).
+- [ ] Update splash page to add PyPI repo link
+- [ ] Automate versioning
+- [ ] Automate PyPI deployment (GitHub Actions?)
 
 ## "Back part"
 
@@ -42,3 +47,4 @@
 - [x] Triadic color scheme generator function
 - [x] Some form of UI to view color schemes in the terminal - see `columnpanelui.py`
 - [x] Pull `rich`-specific code out of ColorScheme class
+- [x] Get package onto PyPI?
